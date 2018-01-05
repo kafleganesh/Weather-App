@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  WeatherApp
 //
-//  Created by Anish on 12/30/17.
+//  Created by Ganesh on 12/25/17.
 //  Copyright © 2017 Ganesh Kafle. All rights reserved.
 //
 

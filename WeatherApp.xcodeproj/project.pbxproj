@@ -12,6 +12,9 @@
 		F8B9F29B1FF7BFC2005E8C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B9F2991FF7BFC2005E8C61 /* Main.storyboard */; };
 		F8B9F29D1FF7BFC2005E8C61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B9F29C1FF7BFC2005E8C61 /* Assets.xcassets */; };
 		F8B9F2A01FF7BFC2005E8C61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B9F29E1FF7BFC2005E8C61 /* LaunchScreen.storyboard */; };
+		F8B9F2A91FF7C17C005E8C61 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9F2A81FF7C17C005E8C61 /* DetailViewController.swift */; };
+		F8B9F2AB1FF7C1FF005E8C61 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9F2AA1FF7C1FF005E8C61 /* ItemTableViewCell.swift */; };
+		F8B9F2AD1FF7C226005E8C61 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9F2AC1FF7C226005E8C61 /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F8B9F29C1FF7BFC2005E8C61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8B9F29F1FF7BFC2005E8C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8B9F2A11FF7BFC2005E8C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8B9F2A81FF7C17C005E8C61 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F8B9F2AA1FF7C1FF005E8C61 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		F8B9F2AC1FF7C226005E8C61 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,64 @@
 			isa = PBXGroup;
 			children = (
 				F8B9F2951FF7BFC2005E8C61 /* AppDelegate.swift */,
-				F8B9F2971FF7BFC2005E8C61 /* ViewController.swift */,
+				F8B9F2B11FF7C78D005E8C61 /* Main */,
+				F8B9F2A71FF7C14F005E8C61 /* Detail */,
 				F8B9F2991FF7BFC2005E8C61 /* Main.storyboard */,
 				F8B9F29C1FF7BFC2005E8C61 /* Assets.xcassets */,
 				F8B9F29E1FF7BFC2005E8C61 /* LaunchScreen.storyboard */,
 				F8B9F2A11FF7BFC2005E8C61 /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		F8B9F2A71FF7C14F005E8C61 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9F2B21FF7C79B005E8C61 /* Controller */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F8B9F2AE1FF7C77A005E8C61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9F2AC1FF7C226005E8C61 /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8B9F2AF1FF7C781005E8C61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9F2AA1FF7C1FF005E8C61 /* ItemTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8B9F2B01FF7C786005E8C61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9F2971FF7BFC2005E8C61 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8B9F2B11FF7C78D005E8C61 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9F2AE1FF7C77A005E8C61 /* Model */,
+				F8B9F2AF1FF7C781005E8C61 /* View */,
+				F8B9F2B01FF7C786005E8C61 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F8B9F2B21FF7C79B005E8C61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9F2A81FF7C17C005E8C61 /* DetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +193,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B9F2AD1FF7C226005E8C61 /* ItemModel.swift in Sources */,
+				F8B9F2AB1FF7C1FF005E8C61 /* ItemTableViewCell.swift in Sources */,
+				F8B9F2A91FF7C17C005E8C61 /* DetailViewController.swift in Sources */,
 				F8B9F2981FF7BFC2005E8C61 /* ViewController.swift in Sources */,
 				F8B9F2961FF7BFC2005E8C61 /* AppDelegate.swift in Sources */,
 			);
